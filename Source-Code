@@ -1,0 +1,27 @@
+def print_invoice(customer, products, prices):
+    print("***************************")
+    print("             Invoice")
+    print("****************************")
+    print(f"Customer: {customer}")
+    print("-------------------------------------")
+    total_amount = 0
+
+    for product, price in zip(products, prices):
+        print(f"{product:20} ${price:.2f}")
+        total_amount += price
+
+    print("----------------------------")
+    print(f"Total:                        ${total_amount:.2f}")
+    print("***************************")
+
+def main():
+  # This will create sample customer data for invoice
+  customer = "Johnnie Matthews"
+  products = ["Product A", "Product B", "Product C"]
+  prices = [50.00, 30.00, 20.00]
+
+  print_invoice(customer, products, prices)
+
+
+if __name__ == "__main__":
+    main()
