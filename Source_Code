@@ -1,0 +1,103 @@
+
+
+# Invoice Generator
+
+The Invoice Generator is a Python program that generates and formats invoices with details like customer information, products, prices, and totals. It provides a simple command-line interface for generating invoices with sample data.
+
+## Features
+
+- Generates formatted invoices with customer details and product information.
+- Calculates the total amount based on the provided product prices.
+
+## Getting Started
+
+Follow the steps below to get the Invoice Generator up and running on your local machine.
+
+### Prerequisites
+
+- Python 3.x
+- Git (optional)
+
+### Installation
+
+1. Clone the repository (or download the ZIP file) to your local machine:
+
+   ```bash
+   git clone https://github.com/your_username/invoice-generator.git
+   ```
+
+   Alternatively, you can directly download the ZIP file from the GitHub repository.
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd invoice-generator
+   ```
+
+3. Create a virtual environment (optional but recommended):
+
+   ```bash
+   # For Windows
+   python -m venv venv
+
+   # For macOS/Linux
+   python3 -m venv venv
+   ```
+
+4. Activate the virtual environment (optional but recommended):
+
+   ```bash
+   # For Windows
+   venv\Scripts\activate
+
+   # For macOS/Linux
+   source venv/bin/activate
+   ```
+
+5. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Usage
+
+1. Open the terminal (Command Prompt or Terminal) and navigate to the project directory.
+
+2. Run the `invoice_generator.py` script:
+
+   ```bash
+   python invoice_generator.py
+   ```
+
+3. The program will display the generated invoice in the console with sample data.
+
+4. Customize the sample data in the `invoice_generator.py` script to generate invoices with different customer details and product information.
+
+### Example
+
+```python
+def main():
+    # Sample data for the invoice
+    customer = "Johnnie Matthews"
+    products = ["Product A", "Product B", "Product C"]
+    prices = [50.00, 30.00, 20.00]
+
+    print_invoice(customer, products, prices)
+
+if __name__ == "__main__":
+    main()
+```
+
+Replace the `customer`, `products`, and `prices` variables with your desired data to generate customized invoices.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+This project is created as part of a Python programming exercise.
+
+Feel free to enhance and customize the Invoice Generator for your specific business needs. Happy invoicing!
+
